@@ -4,7 +4,7 @@ $("#callApp").click(function(){
 });
 
 $(document).ready(function() {
-	ws = new WebSocket("ws://10.0.14.100:8025/ws/chat");
+	ws = new WebSocket("ws://10.0.14.85:8025/ws/chat");
 
 	ws.onmessage = function(event) {
 	    var message = JSON.parse(event.data);
